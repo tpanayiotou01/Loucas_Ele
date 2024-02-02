@@ -96,6 +96,37 @@
 		setTimeout("showIt()", 4000); // after 4.4 seconds
 	</script>
 
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
 
     <script type="text/javascript" defer="defer" src="js/gravityforms.min.js" id="gform_gravityforms-js"></script>
     <script type="text/javascript" defer="defer" src="js/utils.min.js" id="gform_gravityforms_utils-js"></script>
@@ -257,16 +288,44 @@
 			</div>
 		</section>
 	</div></div>
+	<div class="gallery-container">
+			<!-- Slideshow container -->
+		<div class="slideshow-container">
+		
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 3</div>
+		    <img src="images/bio1.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+		
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 3</div>
+		    <img src="images/bio2.jpg" style="width:100%">
+		    <div class="text">Caption Two</div>
+		  </div>
+		
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 3</div>
+		    <img src="images/bio3.jpg" style="width:100%">
+		    <div class="text">Caption Three</div>
+		  </div>
+		
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	</div>
 	
 	<div class="gallery-container">
-		
-		<div class="carousel">
-			<div class="carousel-item">Item 1</div>
-			<div class="carousel-item">Item 2</div>
-			<div class="carousel-item">Item 3</div>
-		</div>
-		<br><br>
-		
 		<div class="float-right wpb_column vc_column_container vc_col-sm-5">
 			<img src="images/bio1.png" width="410px"/>
 		</div>
