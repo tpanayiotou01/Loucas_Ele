@@ -975,7 +975,7 @@ img.alignright,
 .site-header {
 	height: 150px;
 	position: absolute;
-    width: 100%;
+    	width: 40%;
 	background-color: #fff;
 }
 
@@ -985,14 +985,14 @@ img.alignright,
 .title-area {
 	float: left;
 	padding: 15px 0;
-	width: 35%;
+	width: 100%;
 }
 
 .title-area img {
-	width: 410px;
+	width: 100%;
 }
 .title-area img:hover {
-	width: 410px;
+	width: 100%;
 }
 
 .header-full-width .title-area {
