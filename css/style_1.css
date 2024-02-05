@@ -633,7 +633,7 @@ th {
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 95%;
+	max-width: 1170px;
 }
 
 .site-inner {
@@ -975,7 +975,7 @@ img.alignright,
 .site-header {
 	height: 150px;
 	position: absolute;
-    	width: 100%;
+    width: 100%;
 	background-color: #fff;
 }
 
@@ -984,15 +984,15 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 10px 0;
-	width: 30%;
+	padding: 15px 0;
+	width: 35%;
 }
 
 .title-area img {
-	width: 100%;
+	width: 410px;
 }
 .title-area img:hover {
-	width: 100%;
+	width: 410px;
 }
 
 .header-full-width .title-area {
@@ -1040,8 +1040,8 @@ img.alignright,
 .site-header .widget-area {
 	float: right;
 	text-align: right;
-	width: 70%;
-	padding:0;
+	width: 750px;
+	padding:50px 0;
 }
 
 
