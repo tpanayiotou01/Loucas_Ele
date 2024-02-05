@@ -984,8 +984,8 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 12px 0;
-	width: 40%;
+	padding: 10px 0;
+	width: 30%;
 }
 
 .title-area img {
@@ -1040,8 +1040,8 @@ img.alignright,
 .site-header .widget-area {
 	float: right;
 	text-align: right;
-	width: 750px;
-	padding:50px 0;
+	width: 70%;
+	padding:0;
 }
 
 
