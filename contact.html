@@ -5,7 +5,6 @@
      var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}}); 
     /* ]]> */
     </script>
-    <script src="formscript.js"></script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -115,7 +114,7 @@
         max-width: 620px;
         text-align:center;
     }		</style>
-            <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1488841747682{background-color: #fff; !important;}.vc_custom_1488842605459{background-image: url(images/background-white.jpg) !important;}.vc_custom_1470346201845{padding-top: 0px !important;}.vc_custom_1470346212062{padding-top: 0px !important;}.vc_custom_1470266196625{margin-bottom: 0px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><script src="js/wp-emoji-release.min.js" defer=""></script></head>
+            <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1488841747682{background-color: #fff !important;}.vc_custom_1488842605459{background-image: url(images/background-white.jpg) !important;}.vc_custom_1470346201845{padding-top: 0px !important;}.vc_custom_1470346212062{padding-top: 0px !important;}.vc_custom_1470266196625{margin-bottom: 0px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><script src="js/wp-emoji-release.min.js" defer=""></script></head>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSFMSCB"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
