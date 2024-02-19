@@ -240,6 +240,10 @@ summary {
 	line-height: 160%;
 	transition: 0.5s ease-in-out;
 }
+summary:hover {
+	background-color: #fff;
+	color: #095E94;
+}
 
 details[open] summary{
 	background-color: #095f9456;
