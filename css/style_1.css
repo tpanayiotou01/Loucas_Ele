@@ -393,7 +393,7 @@ img {
 --------------------------------------------- */
 
 .gallery {
-	overflow: hidden;
+	overflow: visible;
 }
 
 .gallery-item {
@@ -454,6 +454,31 @@ img:hover {
 	width: 415px;
 }
 
+.Carousel{
+    animation: carousel 200s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+}
+.Block{
+    flex-shrink: 0;
+    width: 600px;
+}
+
+.Block img {
+	height: auto;
+	padding: 4px;
+}
+
+.Block img:hover {
+	border-radius: 5px;
+	width: 600px;
+}
+
+@keyframes carousel{
+    0%   { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-20000px, 0, 0); }
+}
 
 
 /* ## Forms
