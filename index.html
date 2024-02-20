@@ -202,7 +202,11 @@
 	        }
 	    }
 	</script>
-
+	
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		ScrollReveal({ duration: 3000 })
+	</script>
 
 
     <script type="text/javascript" defer="defer" src="js/gravityforms.min.js" id="gform_gravityforms-js"></script>
@@ -295,7 +299,13 @@
 			</li>
 		</ul>
 	</div>
-
+	<script>
+		ScrollReveal().reveal('.home-banner-container')
+		ScrollReveal().reveal('.site-inner', { delay: 1000 })
+		ScrollReveal().reveal('.beforefooter-container', { delay: 2000 })
+		ScrollReveal().reveal('.slideshow-container', { delay: 2000 })
+		ScrollReveal().reveal('.gallery-container', { delay: 2000 })
+	</script>
 	<div class="home-banner-container">
 		<div class="wrap">
 			<div class="banner-box">
