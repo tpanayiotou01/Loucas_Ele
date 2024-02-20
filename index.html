@@ -131,6 +131,50 @@
     plusSlides(1);
   }, 2000);
 </script>
+	
+	<style>
+		.outer {
+			padding: 10px;
+			overflow-y: hidden;
+			width: 80%;
+			height: 90%;
+		}
+
+		.flex-container {
+			overflow-x: auto;
+			height: calc(100% + 17px);
+			padding-bottom: 17px;
+			display: flex;
+			flex-wrap: nowrap;
+		}
+
+		.card {
+			flex: 1 0 100px;
+			height: 150px;
+			display: inline-block;
+			margin: 5px;
+			border: 1px solid;
+		}
+	</style>
+	<script>
+		function clickLeft() {
+			let container = document.querySelector('#flex-container');
+			container.scrollTo({
+				left:container.scrollLeft - 200,
+				top: 0,
+				behavior: "smooth"
+			});
+		}
+
+		function clickRight() {
+			let container = document.querySelector('#flex-container');
+			container.scrollTo({
+				left:container.scrollLeft + 200,
+				top: 0,
+				behavior: "smooth"
+			});
+		}
+	</script>
 
 
     <script type="text/javascript" defer="defer" src="js/gravityforms.min.js" id="gform_gravityforms-js"></script>
@@ -288,38 +332,17 @@
 	<br><br>
 	
 	<div class="slideshow-container">
-		<div class = 'Carousel'>
-			<div class = 'Block'>
-				<img src="images/banner1.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="/images/banner2.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="images/banner3.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="/images/banner4.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="images/banner5.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="images/banner1.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="/images/banner2.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="images/banner3.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="/images/banner4.webp">
-			</div>
-			<div class = 'Block'>
-				<img src="images/banner5.webp">
+		<div class="outer">
+			<div class='flex-container' id="flex-container">
+				<div class='card'><img src="images/banner1.webp"></div>
+				<div class='card'><img src="/images/banner2.webp"></div>
+				<div class='card'><img src="images/banner3.webp"></div>
+				<div class='card'><img src="/images/banner4.webp"></div>
+				<div class='card'><img src="/images/banner5.webp"></div
 			</div>
 		</div>
+		<button onclick="clickLeft()"><</button>
+		<button onclick="clickRight()">></button>
 	</div>
 	<br>
 
