@@ -57,7 +57,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
