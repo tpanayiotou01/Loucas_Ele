@@ -205,7 +205,7 @@
 	
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script>
-		ScrollReveal({ duration: 1000 })
+		ScrollReveal({ duration: 1500 })
 	</script>
 
 
@@ -302,6 +302,11 @@
 	<div class="home-banner-container">
 		<div class="wrap">
 			<div class="banner-box">
+				<section id="custom_html-2" class="widget_text widget widget_custom_html">
+					<div class="widget_text widget-wrap">
+						<div class="textwidget custom-html-widget"></div>
+					</div>
+				</section>
 				<section id="custom_html-3" class="widget_text widget widget_custom_html">
 					<div class="widget_text widget-wrap">
 						<div class="textwidget custom-html-widget">
@@ -460,6 +465,9 @@
 
 <script>
 	ScrollReveal().reveal('.home-banner-container', {delay: 500})
+	ScrollReveal().reveal('.textwidget', {delay: 500})
+	ScrollReveal().reveal('.float-left', {delay: 500})
+	ScrollReveal().reveal('.float-right', {delay: 100})
 	ScrollReveal().reveal('.site-inner', {delay: 500})
 	ScrollReveal().reveal('.beforefooter-container', {delay: 500})
 	ScrollReveal().reveal('.slideshow-container', {delay: 500})
