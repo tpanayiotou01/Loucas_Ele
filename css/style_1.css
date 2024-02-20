@@ -158,11 +158,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 20px; /* Adjust the font size as needed */
     cursor: pointer;
     color: #095E94;
-    background: #000000b9;
-    border: none;
+    background: #00000029;
+    border-radius: 1em;
     outline: none;
 }
 
