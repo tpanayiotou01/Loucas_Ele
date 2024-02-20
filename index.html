@@ -162,24 +162,47 @@
 		}
 	</style>
 	<script>
-		function clickLeft() {
-			let container = document.querySelector('#flex-container');
-			container.scrollTo({
-				left:container.scrollLeft - 350,
-				top: 0,
-				behavior: "smooth"
-			});
-		}
-
-		function clickRight() {
-			let container = document.querySelector('#flex-container');
-			container.scrollTo({
-				left:container.scrollLeft + 350,
-				top: 0,
-				behavior: "smooth"
-			});
-		}
+	    function clickLeft() {
+	        let container = document.querySelector('#flex-container');
+	        let scrollAmount = 350;
+	
+	        // Check if at the beginning, then wrap around to the end
+	        if (container.scrollLeft === 0) {
+	            container.scrollTo({
+	                left: container.scrollWidth - container.clientWidth,
+	                top: 0,
+	                behavior: "smooth"
+	            });
+	        } else {
+	            container.scrollTo({
+	                left: container.scrollLeft - scrollAmount,
+	                top: 0,
+	                behavior: "smooth"
+	            });
+	        }
+	    }
+	
+	    function clickRight() {
+	        let container = document.querySelector('#flex-container');
+	        let scrollAmount = 350;
+	
+	        // Check if at the end, then wrap around to the beginning
+	        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+	            container.scrollTo({
+	                left: 0,
+	                top: 0,
+	                behavior: "smooth"
+	            });
+	        } else {
+	            container.scrollTo({
+	                left: container.scrollLeft + scrollAmount,
+	                top: 0,
+	                behavior: "smooth"
+	            });
+	        }
+	    }
 	</script>
+
 
 
     <script type="text/javascript" defer="defer" src="js/gravityforms.min.js" id="gform_gravityforms-js"></script>
