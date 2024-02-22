@@ -277,6 +277,13 @@ details[open] summary{
 	transition: 0.5s ease-in-out;
 }
 
+details > summary {
+	list-style: none;
+}
+details > summary::-webkit-details-marker {
+	display: none;
+}
+
 a,
 button,
 input:focus,
