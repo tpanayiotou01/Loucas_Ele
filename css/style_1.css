@@ -2287,6 +2287,16 @@ Before Footer
 	border-bottom:1px solid #fff;
 }
 
+.footer-info .socials img{
+	width: 23px;
+	height: 23px;
+}
+.footer-info .socials img:hover {
+	width: 23px;
+	height: 23px;
+	color: #fff;
+}
+
 .footer-copyright span.border{
 	border:1px solid #fff;
 	padding:5px;
